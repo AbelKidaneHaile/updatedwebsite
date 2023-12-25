@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>7 Mania Football Academy</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-574-mexant.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+<!--
+
+TemplateMo 574 Mexant
+
+https://templatemo.com/tm-574-mexant
+
+-->
+    <style>
+      .header-area {
+          background-color: rgba(0, 0, 0, 0.5); /* Set the background color to black */
+          color: rgb(10, 10, 10); /* You may want to adjust text color to make it readable */
+      }
+      
+        
+
+        .section-header h2 {
+            font-size: 50px; /* Make h2 bigger */
+            font-weight: bold; /* Make h2 bold */
+            /* color: aliceblue; */
+        }
+
+        .section-header h2, h3, p {
+            color: aliceblue;
+        }
+
+        .news-section {
+            display: flex;
+            align-items: center;
+            background-image: url("assets/images/news_bg.jpg"); /* Set the background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            justify-content: space-between;
+            padding: 20px;
+            /* background-color: #ffffff; */
+            margin:0%;
+            height: calc(100vh - 0px);
+            
+        }
+
+        .section-title {
+            flex: 1;
+            color: aliceblue;
+            font-size: larger;
+            margin-left: 100px;
+            align-items: center;
+        }
+
+        .section-title h2 {
+            font-size: 50px; /*Adjust the font size as needed*/
+        }
+
+        .news-content {
+            flex: 2;
+            /* display: flex; */
+            justify-content: space-between;
+            color:black;
+            margin-left: 200px;
+        }
+
+        .news-item {
+            background-color: rgb(248, 245, 245);
+            padding: 10px;
+            margin: 20px;
+            max-width: 450px;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            
+        }
+
+        .news-item:hover {
+            transform: scale(1.05);
+        }
+
+        .news-item h5, p{
+          color: #000000;
+        }
+
+
+        .coaches-section {
+            /* background-color: #f0f0f0; Set the background color */
+            text-align: center;
+            /*background-image: url("assets/images/coach-bg.jpg");  Set the background image */
+            background-size: cover;
+            background-color: rgb(0, 0, 0);
+            background-repeat: no-repeat;
+            background-position: center center;
+            padding: 20px;
+            margin: 0%;
+            /* height: calc(100vh - 0px);   */
+            
+        }
+
+        
+
+        .coaches {
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          background-size: cover;
+          background-position: center;
+        }
+
+        
+
+        .coaches-container {
+            display: flex;
+            justify-content:center;
+            /* align-items: center; */
+            /* max-height: max-content; */
+
+        }
+        .coach-cont{
+          width: 100%;
+          height: 100%;
+        }
+
+        .coach {
+            margin: 10px;
+        }
+
+        .coach img {
+            max-width: 100%;
+            max-height: 75%;
+            border: 1px solid #333; /* Add a border to the images */
+            border-radius: 8%; /* Make the images circular */
+            cursor: pointer; /* Show a hand cursor on hover */
+            transition: transform 0.3s;
+            align-items: center;
+        }
+
+        .coach-name {
+            margin-top: 10px;
+            color:aliceblue
+        }
+
+        .coach:hover, .coach img:hover {
+            transform: scale(1.1); /* Scale up the image on hover */
+        }
+
+        .coach.hidden {
+            opacity: 0;
+            transform: translateX(-100%); /* Initial position */
+        }
+
+        .coach.left-hidden {
+            transform: translateX(-100%); /* Initial position for left coach */
+        }
+
+        .coach.right-hidden {
+            transform: translateX(100%); /* Initial position for right coach */
+        }
+
+        .coaches-section.animated .coach {
+            animation: slideIn 0.5s ease-out forwards; /* Animation duration and easing */
+        }
+
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+
+
+        .button a {
+            /* text-decoration: none; */
+            color: rgb(0, 16, 247); /* Text color for the button */
+            font-size: 30px;
+            /* margin-top: 100px; */
+            
+        }
+
+        .contact-section {
+            background-color: #000000;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .location, .social-media, .contact-details {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .map-container {
+            margin-top: 20px;
+        }
+
+        .social-media ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .social-media li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .contact-details p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .contact-details a {
+            text-decoration: none;
+            color: rgb(0, 16, 247);
+        }
+
+        .contact-details a:hover {
+            color: #0070c0; /* Change the color to match your design */
+        }
+
+    </style>
+  </head>
+
+<body>
+
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <nav class="main-nav">
+                      <!-- ***** Logo Start ***** -->
+                      <a href="index.html" class="logo">
+                          <img src="assets/images/logo.png" alt="">
+                      </a>
+                      <!-- ***** Logo End ***** -->
+                      <!-- ***** Menu Start ***** -->
+                      <ul class="nav">
+                          
+                          <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
+                          <li class="scroll-to-section"><a href="gallery.html">Gallery</a></li>
+                          <li class="scroll-to-section"><a href="about-us.html">About Us</a></li>
+                          <li class="scroll-to-section"><a href="program.html">Program</a></li>
+                          <li class="scroll-to-section"><a href="coaches.html"> Coaches</a></li>
+                          <li class="scroll-to-section"><a href="ind.html">News</a></li>
+                          <li><a href="contact-us.html">Book Now</a></li> 
+                      </ul>        
+                      <a class='menu-trigger'>
+                          <span>Menu</span>
+                      </a>
+                      <!-- ***** Menu End ***** -->
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <div class="swiper-container" id="top">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="slide-inner" style="background-image:url(assets/images/slide-01.jpg)">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="header-text">
+                  <h2><br>Welcome to 7 MANIA <br>Football Academy! <br><em>Join us Now!</em> </h2>
+                  <div class="div-dec"></div>
+                  <p>7 MANIA Football Academy is the best football academy in Abu Dhabi. Unlock your soccer potential at our elite Football Academy. Join us today to train with top coaches and elevate your game!</p>
+                  <div class="buttons">
+                    <div class="green-button">
+                      <a href="#">Discover More</a>
+                    </div>
+                    
+                    <div class="orange-button">
+                      <a href="#">Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-inner" style="background-image:url(assets/images/slide-02.jpg)">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="header-text">
+                  <h2><br>Welcome to 7 MANIA <br>Football Academy! <br><em>Join us Now!</em> </h2>
+                  <div class="div-dec"></div>
+                  <p>7 MANIA Football Academy is the best football academy in Abu Dhabi. Unlock your soccer potential at our elite Football Academy. Join us today to train with top coaches and elevate your game!</p>
+                  <div class="buttons">
+                    <div class="green-button">
+                      <a href="#">Discover More</a>
+                    </div>
+                    <div class="orange-button">
+                      <a href="#">Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-inner" style="background-image:url(assets/images/slide-03.jpg)">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="header-text">
+                  <h2><br>Welcome to 7 MANIA <br>Football Academy! <br><em>Join us Now!</em> </h2>
+                  <div class="div-dec"></div>
+                  <p>7 MANIA Football Academy is the best football academy in Abu Dhabi. Unlock your soccer potential at our elite Football Academy. Join us today to train with top coaches and elevate your game!</p>
+                  <div class="buttons">
+                    <div class="green-button">
+                      <a href="#">Discover More</a>
+                    </div>
+                    <div class="orange-button">
+                      <a href="#">Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+  </div>
+
+  <!-- ***** Main Banner Area End ***** -->
+
+
+
+  <section class="news-section">
+    <div class="section-title">
+        <h2>News <br> &  <br> Announcements</h2>
+    </div>
+    <div class="news-content">
+        <div class="news-item">
+            <h5>News Heading 1</h5>
+            <p class="news-date">Date 1</p>
+            <p class="news-body">Content for News 1.</p>
+        </div>
+        <div class="news-item">
+            <h5>News Heading 2</h5>
+            <p class="news-date">Date 2</p>
+            <p class="news-body">Content for News 2.</p>
+        </div>
+        <div class="news-item">
+            <h5>News Heading 3</h5>
+            <p class="news-date">Date 3</p>
+            <p class="news-body">Content for News 3.</p>
+        </div>
+    </div>
+  </section>
+  
+
+
+
+<section class="coaches-section">
+  
+  <div class="container coach-cont">
+      <div class="section-header">
+          <h2>Coaches and Staff<br></h2>
+      </div>
+      <div class="coaches-container">
+          <div class="coach left-hidden">
+            <a href="coaches.html">
+                <img src="assets/images/alban.jpg" alt="Coach 1">
+            </a>
+            <div class="coach-name"><h2>Coach Alban</h2></div>
+        </div>
+        <!-- <div class="coach">
+            <a href="staff.html">
+                <img src="assets/images/admir.jpg" alt="Coach 2">
+            </a>
+            <div class="coach-name"><h2>Coach Jane Smith</h2></div>
+        </div> -->
+        <div class="coach right-hidden">
+            <a href="coaches.html">
+                <img src="assets/images/gilman.jpg" alt="Coach 3">
+            </a>
+            <div class="coach-name"><h2>Coach Gilman</h2></div>
+        </div>
+      </div>
+      <div class="see-more-button">
+          <a href="coaches.html">See More</a>
+      </div>
+  </div>
+</section>
+
+
+<script>
+  // Function to add the 'animated' class when the section is in the viewport
+  function animateOnScroll(entries, observer) {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('animated');
+              observer.unobserve(entry.target); // Stop observing once animation is applied
+          }
+      });
+  }
+  
+  // Create an Intersection Observer
+  const observer = new IntersectionObserver(animateOnScroll, {
+      root: null, // Use the viewport as the root
+      threshold: 0.5, // Trigger when 50% of the section is in the viewport
+  });
+  
+  // Target the 'coaches-section' element and start observing it
+  const coachesSection = document.querySelector('.coaches-section');
+  if (coachesSection) {
+      observer.observe(coachesSection);
+  }
+</script>
+
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading">
+            <h6>Testimonials</h6>
+            <h4>What They Say</h4>
+          </div>
+        </div>
+        <div class="col-lg-10 offset-lg-1">
+            <div class="item">
+              <i class="fa fa-quote-left"></i>
+              <h4>“I have personally observed an exponential increase, in only one year, with several of the kids who have been at his academia. Remarkably, Alban does an incredible effort to forge the personality of his athletes, so much so that I in one year have seen kids becoming an army that can't wait to compete at the highest levels”</h4>
+              <h4>Emilio Porcu</h4> 
+            </div>
+            <div class="item">
+              <i class="fa fa-quote-left"></i>
+              <h4>“This is the review of my 9 year old son "Best trainer in the world, pushes me to my limit, has hope in everyone, he always wants us to do the right thing and give it our best. He is a tough coach but nice and loving and I learn a lot from him. Thank you Alban and 7 Mania! we love you!" Lucca Dib”</h4>
+              <h4>Claire Khalifa</h4>
+            </div>
+            <div class="item">
+              <i class="fa fa-quote-left"></i>
+              <h4>“Coach Alban is simply fantastic! He's knowledgable, encouraging, commited, caring, motivational, passionate, disciplined, and more importantly, he instills these same qualities in the children he coaches. His energy, dedication and enthusiasm are admirable. Every session with Alban is world class training”</h4>
+              <h4>Brankica Stevanović</h4>
+            </div>
+            
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="contact-section">
+    <div class="contact-info">
+        <div class="location">
+            <h3>Location</h3>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <a href="https://www.google.com/maps/dir/24.4245291,54.5108637/football+academy+7+mania/@24.4554251,54.361005,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3e5e67697fadca9d:0x92f7f80e04d8894d!2m2!1d54.4034706!2d24.4925039?entry=ttu" target="_blank">Al Rami St - Al Reem Island - Tamouh - Abu Dhabi</a>
+            </li>
+            <div class="map-container">
+                <!-- Google Maps Embed Code -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3630.796445530925!2d54.40089567449579!3d24.492508759883957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e67697fadca9d%3A0x92f7f80e04d8894d!2s7%20MANiA%20Football%20Academy!5e0!3m2!1sen!2sae!4v1699110736701!5m2!1sen!2sae"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+        <div class="social-media">
+            <h3>Social Media</h3>
+            <ul>
+                <li>
+                    <i class="fab fa-facebook"></i>
+                    <a href="https://facebook.com/youracademy" target="_blank">Facebook</a>
+                </li>
+                <li>
+                    <i class="fab fa-twitter"></i>
+                    <a href="https://twitter.com/youracademy" target="_blank">Twitter</a>
+                </li>
+                <li>
+                    <i class="fab fa-instagram"></i>
+                    <a href="https://instagram.com/youracademy" target="_blank">Instagram</a>
+                </li>
+                <!-- Add more social media links as needed -->
+            </ul>
+        </div>
+        <div class="contact-details">
+            <h3>Contact Details</h3>
+            <p>Email: <a href="mailto:info@youracademy.com">Email: info@youracademy.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">Phone: +1 (234) 567-890</a></p>
+        </div>
+    </div>
+</section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2023 7 MANIA Football Academy. All Rights Reserved. 
+          
+          <br>Designed by <a title="CSS Templates" rel="sponsored" href="https://templatemo.com" target="_blank">Henok, Noah & Abel</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        var interleaveOffset = 0.5;
+
+      var swiperOptions = {
+        loop: true,
+        speed: 1000,
+        grabCursor: true,
+        watchSlidesProgress: true,
+        mousewheelControl: true,
+        keyboardControl: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        on: {
+          progress: function() {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              var slideProgress = swiper.slides[i].progress;
+              var innerOffset = swiper.width * interleaveOffset;
+              var innerTranslate = slideProgress * innerOffset;
+              swiper.slides[i].querySelector(".slide-inner").style.transform =
+                "translate3d(" + innerTranslate + "px, 0, 0)";
+            }      
+          },
+          touchStart: function() {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              swiper.slides[i].style.transition = "";
+            }
+          },
+          setTransition: function(speed) {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              swiper.slides[i].style.transition = speed + "ms";
+              swiper.slides[i].querySelector(".slide-inner").style.transition =
+                speed + "ms";
+            }
+          }
+        }
+      };
+
+      var swiper = new Swiper(".swiper-container", swiperOptions);
+    </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var testimonialIndex = 0;
+    showTestimonial();
+
+    function showTestimonial() {
+      var testimonials = document.getElementsByClassName('item');
+      for (var i = 0; i < testimonials.length; i++) {
+        testimonials[i].style.display = 'none';
+      }
+      testimonialIndex++;
+      if (testimonialIndex > testimonials.length) {
+        testimonialIndex = 1;
+      }
+      testimonials[testimonialIndex - 1].style.display = 'block';
+      setTimeout(showTestimonial, 2000); // Change 5000 to the desired interval in milliseconds (e.g., 5000 for 5 seconds)
+    }
+  });
+</script>
+
+
+
+  </body>
+</html>

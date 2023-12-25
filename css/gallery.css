@@ -1,0 +1,291 @@
+#video-container video,
+.video-overlay {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    transform: translate(0%, 0%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.text-overlay h1 {
+    position: absolute;
+    top: 60%;  /* Adjust the top position as needed */
+    left:50%;  /* Adjust the left position as needed */
+    transform: translate(-50%, -50%);
+    /* background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 1px;
+    color: rgba(255, 255, 255, 1);
+    /*color: #fff;  /* Text color */
+    font-weight: bold;
+    font-size: 180px;   
+    font-family: "Arial", sans-serif;
+}
+
+.gray-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 122%;
+    background: rgba(0, 0, 0, 0.5); /* Gray with 50% opacity */
+    margin-bottom: 20px;
+}
+
+
+#custom_background {
+  width: 100%; /* Set the width to 100% of its container */
+  height: 800px; /* Set the height to your desired value */
+  background-image: url('gallery_background.jpg'); /* Set the path to your image */
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the background */
+  /* You can add more styles as needed */
+  transform: translate(0%, -2%);
+  position: relative;
+}
+
+.footdiv{
+  position: relative;
+  transform: translate(0%, -20%);
+  background-position: center;
+}
+
+
+.gallery-background{
+    position: relative;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+
+}
+
+.gallery {
+    --size: min(100vmin, 2000px);
+    position: relative;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -110%);
+    box-shadow: 
+      0 0 10px rgba(7, 7, 7, 0.133),
+      0 20px 40px -20px rgba(9, 9, 9, 0.267);
+    width: var(--size);
+    height: var(--size);
+    background: #090909;
+    border: 6px solid #000000;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    gap: 6px;
+}
+  
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+  @keyframes moveHorizontal {
+    to {
+      object-position: 100% 0;
+    }
+  }
+  
+  @keyframes moveVertical {
+    to {
+      object-position: 0 100%;
+    }
+  }
+  
+  @keyframes shrinkVertical {
+    to {
+      height: 0;
+    }
+  }
+  
+  @keyframes shrinkHorizontal {
+    to {
+      width: 0;
+    }
+  }
+  
+  
+  @keyframes growHorizontal {
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes growHorizontal2 {
+    to {
+      width: 70%;
+    }
+  }
+  
+  @keyframes growVertical {
+    to {
+      height: 100%;
+    }
+  }
+  
+  
+  @keyframes growAll {
+    to {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  .gallery img:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: end;
+    animation: 
+      moveHorizontal 8.5s 0.5s 1,
+      shrinkHorizontal 2s 9s ease-in 1;
+    animation-fill-mode: forwards;
+  }
+  
+  .gallery img:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    animation: 
+      shrinkHorizontal 2s 11s 1;
+    animation-fill-mode: forwards;
+  }
+  
+  .gallery img:nth-child(3) {
+    grid-row: 2;
+    grid-column: 1 / 3;
+    align-self: end;
+    object-position: 0 0;
+    animation:
+      moveVertical 5s 1s 1,
+      shrinkVertical 3s 5s 1;
+    animation-fill-mode: forwards;
+  }
+  
+  .gallery img:nth-child(4) {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    width: 0;
+    justify-self: center;
+    align-self: start;
+    animation: 
+      growHorizontal 2.25s 11s 1,
+      moveHorizontal 4s 14s 1,
+      shrinkVertical 2s 18s 1;
+    animation-fill-mode: forwards;
+  }
+  
+  .gallery img:nth-child(5) {
+    grid-column: 1;
+    grid-row: 2;
+    width: 0;
+    justify-self: start;
+    align-self: end;
+    animation: 
+      growHorizontal 2.5s 7.5s 1,
+      moveVertical 4s 12.5s 1,
+      shrinkHorizontal 2s 17s 1;;
+    animation-fill-mode: forwards;
+  }
+  
+  .gallery img:nth-child(6) {
+    grid-column: 2;
+    grid-row: 2;
+    width: 0;
+    justify-self: end;
+    align-self: end;
+    animation: 
+      growHorizontal 2s 8s 1,
+      shrinkHorizontal 2s 17s 1;
+    animation-fill-mode: forwards;
+  }
+  
+  .gallery img:nth-child(7) {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    width: 0;
+    justify-self: end;
+    align-self: end;
+    object-position: 0 0;
+    animation: 
+      growHorizontal 2s 20s 1,
+      moveHorizontal 16s 21.5s 1;
+    animation-fill-mode: forwards;
+  }
+
+
+.containerforcontainer2{
+    position: relative;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -2%);
+    background-color: black;
+
+}
+
+
+
+  .container2{
+    grid-area: c;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    grid-gap: 20px;
+    grid-auto-flow: dense;
+    overflow: auto;
+    padding-right: 10px;  /*fix box-shadow on right side cutting off*/
+  }
+  /*scrollbar stuff*/
+  .container2 { 
+      -ms-overflow-style: none;
+      overflow: -moz-scrollbars-none; 
+  }
+  .container2::-webkit-scrollbar { 
+      display: none;  
+  }
+  .container2>div{
+    z-index: 1;
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.2), 
+                5px 5px 25px rgba(0,0,0,.1);
+    transition: all .3s ease-in-out;
+    
+  }
+  .container2 div img{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: all .6s ease-in-out;
+    
+  }
+
+  /*make bIG*/
+.container2>div:hover, .container>div:hover img{
+    transform: scale(1.05);
+}
+
+  
+  .vertical{
+    grid-row: span 2;
+  }
+  .horizontal{
+    grid-column: span 2;
+  }
+  .big{
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+  
+ 
+  /* Animation Stuff */
+  *:not(a){
+    animation: 3s ease-out 0s 1 fadeIn;
+  }
