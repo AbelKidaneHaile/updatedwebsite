@@ -358,8 +358,8 @@ header
 }
 
 .header-area .main-nav .nav li:hover a,
-.header-area .main-nav .nav li a.active {
-  color: #0c0c0c;
+.header-area .main-nav .nav li {
+  color: #db1717;
 }
 
 .background-header .main-nav .nav li:hover a,
@@ -563,9 +563,9 @@ header
   margin-top: 30px;
 }
 
-.header-area.header-sticky .nav li a.active {
-  color: #0a0a0a;
-}
+/* .header-area.header-sticky .nav li a.active {
+  color: #10db32;
+} */
 
 @media (max-width: 1200px) {
   .header-area .main-nav .nav li {
@@ -621,6 +621,9 @@ header
   }
   .header-area .main-nav .nav li:first-child {
     border-top: 1px solid #eee;
+  }
+  .nav li:first-child{
+    color: #eee;
   }
   .header-area.header-sticky .nav {
     margin-top: 100px !important;
@@ -1441,6 +1444,7 @@ Contact section added
   margin-top: 10px; /* Adjust the top margin as needed */
   width: 100px; /* Adjust the width as needed */
   height: auto; /* Maintain the image's aspect ratio */
+}
 .image-object{
   width:100px;
   height:90px;
@@ -1840,7 +1844,6 @@ body {
   section.map .info-item {
     margin-top: 30px;
   }
-}
 
 @media (max-width: 767px) {
   .header-area .main-nav .logo {
