@@ -25,7 +25,7 @@
     <style>
       .header-area {
           background-color: rgba(0, 0, 0, 0.5); /* Set the background color to black */
-          color: rgb(10, 10, 10); /* You may want to adjust text color to make it readable */
+          color: rgb(0, 0, 0); /* You may want to adjust text color to make it readable */
       }
       
         .section-header h2 {
@@ -35,19 +35,18 @@
         }
 
         .section-header h2, h3, p {
-            color: aliceblue;
+            color: rgb(255, 255, 255);
         }
 
         .news-section {
             display: flex;
             align-items: center;
-            background-image: url("assets/images/news_bg.jpg"); /* Set the background image */
+            background-image: url("assets/images/news_bg.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
             justify-content: space-between;
             padding: 20px;
-            /* background-color: #ffffff; */
             margin:0%;
             height: calc(100vh - 0px);
             
@@ -55,7 +54,7 @@
 
         .section-title {
             flex: 1;
-            color: aliceblue;
+            color: rgb(255, 255, 255);
             font-size: larger;
             margin-left: 100px;
             align-items: center;
@@ -74,7 +73,7 @@
         }
 
         .news-item {
-            background-color: rgb(248, 245, 245);
+            background-color: rgb(255, 255, 255);
             padding: 10px;
             margin: 20px;
             max-width: 450px;
@@ -107,8 +106,6 @@
             
         }
 
-        
-
         .coaches {
           width: 100%;
           height: 100%;
@@ -139,7 +136,7 @@
         .coach img {
             max-width: 100%;
             max-height: 75%;
-            border: 1px solid #333; /* Add a border to the images */
+            border: 1px solid rgb(17, 17, 17); /* Add a border to the images */
             border-radius: 8%; /* Make the images circular */
             cursor: pointer; /* Show a hand cursor on hover */
             transition: transform 0.3s;
@@ -148,7 +145,7 @@
 
         .coach-name {
             margin-top: 10px;
-            color:aliceblue
+            color:rgb(255, 255, 255)
         }
 
         .coach:hover, .coach img:hover {
@@ -183,7 +180,7 @@
 
         .button a {
             /* text-decoration: none; */
-            color: rgb(0, 16, 247); /* Text color for the button */
+            color: rgb(236, 11, 11); /* Text color for the button */
             font-size: 30px;
             /* margin-top: 100px; */
             
@@ -224,13 +221,13 @@
             font-size: 18px;
         }
 
-        .contact-details a {
+        .contact-info a,.see-more-button a {
             text-decoration: none;
-            color: rgb(0, 16, 247);
+            color: rgb(247, 0, 0);
         }
 
-        .contact-details a:hover {
-            color: #0070c0; /* Change the color to match your design */
+        .contact-info a:hover {
+            color: #c41919; /* Change the color to match your design */
         }
 
     </style>
@@ -285,12 +282,12 @@
                   <p>7 MANIA Football Academy is the best football academy in Abu Dhabi. Unlock your soccer potential at our elite Football Academy. Join us today to train with top coaches and elevate your game!</p>
                   <div class="buttons">
                     <div class="green-button">
-                      <a href="#">Discover More</a>
-                    </div>
-                    
-                    <div class="orange-button">
                       <a href="#ContactSection">Contact Us</a>
                     </div>
+                    
+                    <!-- <div class="orange-button">
+                      <a href="#ContactSection">Contact Us</a>
+                    </div> -->
                   </div>
                 </div>
               </div>
@@ -309,11 +306,11 @@
                   <p>7 MANIA Football Academy is the best football academy in Abu Dhabi. Unlock your soccer potential at our elite Football Academy. Join us today to train with top coaches and elevate your game!</p>
                   <div class="buttons">
                     <div class="green-button">
-                      <a href="#">Discover More</a>
+                      <a href="#ContactSection">Contact Us</a>
                     </div>
-                    <div class="orange-button">
-                      <a href="#">Contact Us</a>
-                    </div>
+                    <!-- <div class="orange-button">
+                      <a href="#ContactSection">Contact Us</a>
+                    </div> -->
                   </div>
                 </div>
               </div>
@@ -332,11 +329,11 @@
                   <p>7 MANIA Football Academy is the best football academy in Abu Dhabi. Unlock your soccer potential at our elite Football Academy. Join us today to train with top coaches and elevate your game!</p>
                   <div class="buttons">
                     <div class="green-button">
-                      <a href="#">Discover More</a>
+                      <a href="#ContactSection">Contact Us</a>
                     </div>
-                    <div class="orange-button">
-                      <a href="#">Contact Us</a>
-                    </div>
+                    <!-- <div class="orange-button">
+                      <a href="#ContactSection">Contact Us</a>
+                    </div> -->
                   </div>
                 </div>
               </div>
@@ -383,7 +380,7 @@
   
   <div class="container coach-cont">
       <div class="section-header">
-          <h2>Coaches and Staff<br></h2>
+          <h2>Meet Our Coaches<br></h2>
       </div>
       <div class="coaches-container">
           <div class="coach left-hidden">
