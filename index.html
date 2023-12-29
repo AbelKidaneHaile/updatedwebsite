@@ -41,7 +41,9 @@
         .news-section {
             display: flex;
             align-items: center;
-            background-image: url("assets/images/news_bg.jpg");
+            /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/images/7m.jpg');  */
+            /* background-attachment: fixed; */
+            /* background-image: url("assets/images/news_bg.jpg"); */
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
@@ -62,6 +64,7 @@
 
         .section-title h2 {
             font-size: 50px; /*Adjust the font size as needed*/
+            color:#f00000;
         }
 
         .news-content {
@@ -85,6 +88,7 @@
 
         .news-item:hover {
             transform: scale(1.05);
+            background-color: #c41919;
         }
 
         .news-item h5, p{
@@ -92,99 +96,130 @@
         }
 
 
-        .coaches-section {
-            /* background-color: #f0f0f0; Set the background color */
-            text-align: center;
-            /*background-image: url("assets/images/coach-bg.jpg");  Set the background image */
-            background-size: cover;
-            background-color: rgb(0, 0, 0);
-            background-repeat: no-repeat;
-            background-position: center center;
-            padding: 20px;
-            margin: 0%;
-            /* height: calc(100vh - 0px);   */
-            
-        }
-
-        .coaches {
-          width: 100%;
-          height: 100%;
-          left: 0;
-          top: 0;
-          background-size: cover;
-          background-position: center;
-        }
-
         
-
-        .coaches-container {
-            display: flex;
-            justify-content:center;
-            /* align-items: center; */
-            /* max-height: max-content; */
-
-        }
-        .coach-cont{
-          width: 100%;
-          height: 100%;
-        }
-
-        .coach {
-            margin: 10px;
-        }
-
-        .coach img {
-            max-width: 100%;
-            max-height: 75%;
-            border: 1px solid rgb(17, 17, 17); /* Add a border to the images */
-            border-radius: 8%; /* Make the images circular */
-            cursor: pointer; /* Show a hand cursor on hover */
-            transition: transform 0.3s;
-            align-items: center;
-        }
-
-        .coach-name {
-            margin-top: 10px;
-            color:rgb(255, 255, 255)
-        }
-
-        .coach:hover, .coach img:hover {
-            transform: scale(1.1); /* Scale up the image on hover */
-        }
-
-        .coach.hidden {
-            opacity: 0;
-            transform: translateX(-100%); /* Initial position */
-        }
-
-        .coach.left-hidden {
-            transform: translateX(-100%); /* Initial position for left coach */
-        }
-
-        .coach.right-hidden {
-            transform: translateX(100%); /* Initial position for right coach */
-        }
-
-        .coaches-section.animated .coach {
-            animation: slideIn 0.5s ease-out forwards; /* Animation duration and easing */
-        }
-
-        @keyframes slideIn {
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
+        body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/images/7m1.jpg'); /* Replace with your image path or URL */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #ecf0f1;
+    }
 
 
 
+
+
+
+
+      .coaches-section {
+      /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/images/7m.jpg'); */
+      /* background-color: #1b1c1d; */
+      /* background-attachment: fixed; */
+      color: #ecf0f1;
+      padding: 40px 0;
+      /* padding: 20px; */
+      margin: 0%;
+  /* height: calc(100vh - 0px);   */
+    }
+
+    .coach-cont {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .section-header h2 {
+      text-align: center;
+      font-size: 45px;
+      margin-bottom: 20px;
+    }
+
+    .coaches-container {
+      display: flex;
+      /* justify-content: space-between; */
+      margin-bottom: 20px;
+      flex-wrap: wrap; /* Allow coaches to wrap to the next line if needed */
+      justify-content: space-around; /* Distribute space between coaches */
+    }
+
+    .coach {
+      width: 45%;
+      overflow: hidden;
+      position: relative;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .coach:hover {
+      transform: scale(1.05);
+    }
+
+    .coach img {
+      width: 100%;
+      /* height: auto; */
+      min-height: 90%;
+      border-radius: 10px 10px 0 0;
+      display: block;
+    }
+
+    .coach-name {
+      padding: 15px;
+      text-align: center;
+      background-color: #34495e;
+      border-radius: 0 0 10px 10px;
+    }
+
+    .coach-name h2 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .see-more-button {
+      text-align: center;
+      color: #ecf0f1;
+    }
+
+    .see-more-button a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #c01d0b;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .see-more-button a:hover {
+      background-color: #c0392b;
+    }
+
+    
         .button a {
-            /* text-decoration: none; */
-            color: rgb(236, 11, 11); /* Text color for the button */
-            font-size: 30px;
-            /* margin-top: 100px; */
-            
+            color: rgb(255, 255, 255); /* Text color for the button */
+            font-size: 30px;            
         }
+
+
+        .section-heading h4 {
+          margin-top: 10px;
+          line-height: 40px;
+          font-size: 40px;
+          font-weight: 700;
+          text-transform: capitalize;
+          color:aliceblue;
+        }
+        
+        .section-heading h6 {
+          font-size: 50px;
+          text-transform: uppercase;
+          font-weight: 200;
+          color: #f00000;
+          font-weight: 700;
+        }
+
 
         .contact-section {
             background-color: #000000;
@@ -221,7 +256,7 @@
             font-size: 18px;
         }
 
-        .contact-info a,.see-more-button a {
+        .contact-info a {
             text-decoration: none;
             color: rgb(247, 0, 0);
         }
@@ -229,6 +264,18 @@
         .contact-info a:hover {
             color: #c41919; /* Change the color to match your design */
         }
+
+
+    .section-divider {
+      width: 70%;
+      height: 8px;
+      background-color: rgba(255, 255, 255, 0.8);
+      margin: 20px auto; /* Adjust margin as needed */
+      border-radius: 4px; /* Create circular edges */
+    }
+
+
+        
 
     </style>
   </head>
@@ -254,7 +301,7 @@
                           <li class="scroll-to-section"><a href="gallery.html">Gallery</a></li>
                           <li class="scroll-to-section"><a href="about-us.html">About Us</a></li>
                           <li class="scroll-to-section"><a href="program.html">Program</a></li>
-                          <li class="scroll-to-section"><a href="coaches.html"> Coaches</a></li>
+                          <li class="scroll-to-section"><a href="ind.html"> Coaches</a></li>
                           <li><a href="https://form.jotform.com/232326142612445?fbclid=PAAabEweTpxu2II_rep6kXBt681DCH68hN_6Xw15EoqSSKvRhl0suJm7S7Pfg">Book Now</a></li> 
                       </ul>        
                       <!-- <a class='menu-trigger'>
@@ -349,6 +396,33 @@
   <!-- ***** Main Banner Area End ***** -->
 
 
+  <section class="coaches-section"> 
+    <div class="container coach-cont">
+        <div class="section-header">
+            <h2>Meet Our Coaches<br></h2>
+        </div>
+        <div class="coaches-container">
+            <div class="coach left-hidden">
+              <a href="coaches.html">
+                  <img src="assets/images/alban.jpg" alt="Coach 1">
+              </a>
+              <div class="coach-name"><h2>Coach Alban</h2></div>
+          </div>
+          
+          <div class="coach right-hidden">
+              <a href="coaches.html">
+                  <img src="assets/images/gilman.jpg" alt="Coach 3">
+              </a>
+              <div class="coach-name"><h2>Coach Gilman</h2></div>
+          </div>
+        </div>
+        <div class="see-more-button">
+            <a href="coaches.html">See More</a>
+        </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
 
   <section class="news-section">
     <div class="section-title">
@@ -356,53 +430,23 @@
     </div>
     <div class="news-content">
         <div class="news-item">
-            <h5>News Heading 1</h5>
+            <h5>Upcoming Tournament</h5>
             <p class="news-date">Date 1</p>
-            <p class="news-body">Content for News 1.</p>
+            <p class="news-body">Get ready for our exciting upcoming soccer tournament. Mark your calendars!</p>
         </div>
         <div class="news-item">
-            <h5>News Heading 2</h5>
+            <h5>New Training Schedule</h5>
             <p class="news-date">Date 2</p>
-            <p class="news-body">Content for News 2.</p>
+            <p class="news-body">We've updated our training schedule to enhance your skills. Check it out now!</p>
         </div>
         <div class="news-item">
-            <h5>News Heading 3</h5>
+            <h5>Team Achievements</h5>
             <p class="news-date">Date 3</p>
-            <p class="news-body">Content for News 3.</p>
+            <p class="news-body">Congratulations to our teams for their recent accomplishments. Keep up the great work!</p>
         </div>
     </div>
   </section>
   
-
-
-
-<section class="coaches-section">
-  
-  <div class="container coach-cont">
-      <div class="section-header">
-          <h2>Meet Our Coaches<br></h2>
-      </div>
-      <div class="coaches-container">
-          <div class="coach left-hidden">
-            <a href="coaches.html">
-                <img src="assets/images/alban.jpg" alt="Coach 1">
-            </a>
-            <div class="coach-name"><h2>Coach Alban</h2></div>
-        </div>
-        
-        <div class="coach right-hidden">
-            <a href="coaches.html">
-                <img src="assets/images/gilman.jpg" alt="Coach 3">
-            </a>
-            <div class="coach-name"><h2>Coach Gilman</h2></div>
-        </div>
-      </div>
-      <div class="see-more-button">
-          <a href="coaches.html">See More</a>
-      </div>
-  </div>
-</section>
-
 
 <script>
   // Function to add the 'animated' class when the section is in the viewport
@@ -427,6 +471,8 @@
       observer.observe(coachesSection);
   }
 </script>
+
+  <div class="section-divider"></div>
 
   <section class="testimonials" id="testimonials">
     <div class="container">
@@ -460,6 +506,7 @@
     </div>
   </section>
 
+  
 
 
   <section class="contact-section" id="ContactSection">
