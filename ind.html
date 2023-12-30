@@ -3,119 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Soccer News and Announcements</title>
+  <title>Meet Our Coaches</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f8f9fa;
-      color: #495057;
-      background-image: url('soccer-pattern.png'); /* Replace with your pattern image */
-      background-repeat: repeat;
+      background: linear-gradient(45deg, #2c3e50, #3498db);
+      color: #fff;
     }
 
-    .news-section {
-      background-color: #343a40;
-      color: #fff;
-      padding: 40px 0;
+    .coaches-section {
+      padding: 80px 0;
       text-align: center;
     }
 
-    .section-title h2 {
+    .section-header h2 {
       font-size: 36px;
       margin: 0;
       line-height: 1.2;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     }
 
-    .news-content {
+    .coaches-container {
       display: flex;
       justify-content: space-around;
-      margin-top: 20px;
+      align-items: center;
+      margin-top: 40px;
     }
 
-    .news-item {
+    .coach {
       background-color: #fff;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      width: 30%;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      position: relative;
+      border-radius: 12px;
       overflow: hidden;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      position: relative;
+      transform: translateY(50px);
+      opacity: 0;
+      animation: slideIn 0.8s forwards ease-out, fadeIn 0.8s forwards ease-out;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .news-item:hover {
-      transform: translateY(-5px) rotate(2deg);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    .coach:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
     }
 
-    .news-item::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
+    .coach img {
       width: 100%;
-      height: 100%;
-      background: linear-gradient(45deg, #3498db, #e74c3c);
-      opacity: 0.2;
-      pointer-events: none;
+      height: auto;
+      border-bottom: 4px solid #3498db;
+      transition: transform 0.3s ease;
     }
 
-    .news-item h5 {
-      color: #343a40;
-      margin-top: 0;
+    .coach:hover img {
+      transform: scale(1.1);
     }
 
-    .news-date {
-      font-style: italic;
-      color: #6c757d;
-      margin-top: 5px;
+    .coach-name {
+      padding: 20px;
+      text-align: center;
     }
 
-    .news-body {
-      margin-top: 10px;
+    .see-more-button a {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #e74c3c;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
     }
 
-    @keyframes pulsate {
-      0% {
-        transform: scale(1);
+    .see-more-button a:hover {
+      background-color: #c0392b;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(50px);
       }
-      50% {
-        transform: scale(1.05);
-      }
-      100% {
-        transform: scale(1);
+      to {
+        transform: translateY(0);
       }
     }
 
-    .pulsating {
-      animation: pulsate 2s infinite;
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
   </style>
 </head>
 <body>
 
-  <section class="news-section">
-    <div class="section-title">
-        <h2>News <br> & <br> Announcements</h2>
-    </div>
-    <div class="news-content">
-        <div class="news-item pulsating">
-            <h5>Upcoming Tournament</h5>
-            <p class="news-date">Date 1</p>
-            <p class="news-body">Get ready for our exciting upcoming soccer tournament. Mark your calendars!</p>
+  <section class="coaches-section"> 
+    <div class="container coach-cont">
+        <div class="section-header">
+            <h2>Meet Our Coaches</h2>
         </div>
-        <div class="news-item pulsating">
-            <h5>New Training Schedule</h5>
-            <p class="news-date">Date 2</p>
-            <p class="news-body">We've updated our training schedule to enhance your skills. Check it out now!</p>
+        <div class="coaches-container">
+            <div class="coach left-hidden">
+              <a href="coaches.html">
+                  <img src="assets/images/alban.jpg" alt="Coach 1">
+              </a>
+              <div class="coach-name"><h2>Coach Alban</h2></div>
+          </div>
+          
+          <div class="coach right-hidden">
+              <a href="coaches.html">
+                  <img src="assets/images/gilman.jpg" alt="Coach 3">
+              </a>
+              <div class="coach-name"><h2>Coach Gilman</h2></div>
+          </div>
         </div>
-        <div class="news-item pulsating">
-            <h5>Team Achievements</h5>
-            <p class="news-date">Date 3</p>
-            <p class="news-body">Congratulations to our teams for their recent accomplishments. Keep up the great work!</p>
+        <div class="see-more-button">
+            <a href="coaches.html">See More</a>
         </div>
     </div>
   </section>
