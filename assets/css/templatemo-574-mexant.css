@@ -1256,7 +1256,7 @@ Page-Heading Text : this is imported and is experimental
 
 
 .page-heading {
-  background-image: url(../images/NewSet/football_net_page_header.jpg);
+  /*background-image: url(../images/NewSet/football_net_page_header.jpg);*/
   /*This image needs to be replaced with a relevant image of 7mania*/
   background-position: center center;
   background-repeat: no-repeat;
@@ -1293,7 +1293,7 @@ about us page
 section.top-section{
   /* background-color: #181d30;      Changing the background color of the main code of the block */   /* 12/11/2023 */
   margin-top: 0%;       /* 12/11/2023 */
-  background-image: url(../images/NewSet/football_net_page_header_inverted.jpg);
+  /*background-image: url(../images/NewSet/football_net_page_header_inverted.jpg);    /*05/01/2024*/
   /*This image needs to be replaced with a relevant image of 7mania*/
   background-position: center center;
   background-repeat: no-repeat;
