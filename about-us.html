@@ -23,12 +23,46 @@
 
     <!-- Applying the stying for the footer section that contains the map and contact details -->
     <style>
+      
+      /*body{
+        background-image: url("assets/images/7m_ball_enclosed.jpg");   /*05/01/2024*/
+      /*}
+      */
+
+      
+      body {
+        background-image: url('assets/images/7m_ball_enclosed2.jpg'); /* Replace 'your-image-url.jpg' with the actual path to your image */
+        background-size: cover; /* Cover the entire background */
+        background-position: left top; /* Set the initial position to the left top corner */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        /* Add other styles as needed */
+    }
+    
+
       .header-area {
           background-color: rgba(0, 0, 0, 0.5); /* Set the background color to black */
           color: rgb(10, 10, 10); /* You may want to adjust text color to make it readable */
       }
+
+      /* Styling the header-section */
+
+      .page-heading > .container > .row {
+        /* Your styling for the 'row' container goes here */
+        margin-top: 1.3%;
+        margin-bottom: 0.9%;
+        /* Add any other styles as needed */
+     }
+    
+      .page_title{
+        font-family: "Arial", sans-serif;   /*Changing the font of the page title */
+      }
       
-        
+      /* Styling the left image beside the values of 7Mania */
+
+      .col-lg-6 >.left-image{
+          width: 100%;
+          height: 90%;
+      }
 
         .section-header h2 {
             font-size: 50px; /* Make h2 bigger */
@@ -43,7 +77,7 @@
         .news-section {
             display: flex;
             align-items: center;
-            background-image: url("assets/images/news_bg.jpg"); /* Set the background image */
+            /*background-image: url("assets/images/news_bg.jpg"); /* Set the background image */
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
@@ -192,50 +226,48 @@
         }
 
         .contact-section {
-            background-color: #000000;
-            margin: 0px;
-            /*padding: 40px;*/
-            padding: 0px;
-            text-align: center;
-        }
+          background-color: #000000;
+          padding: 40px;
+          text-align: center;
+      }
 
-        .contact-info {
-            display: flex;
-            justify-content: space-around;
-        }
+      .contact-info {
+          display: flex;
+          justify-content: space-around;
+      }
 
-        .location, .social-media, .contact-details {
-            flex: 1;
-            padding: 20px;
-        }
+      .location, .social-media, .contact-details {
+          flex: 1;
+          padding: 20px;
+      }
 
-        .map-container {
-            margin-top: 20px;
-        }
+      .map-container {
+          margin-top: 20px;
+      }
 
-        .social-media ul {
-            list-style: none;
-            padding: 0;
-        }
+      .social-media ul {
+          list-style: none;
+          padding: 0;
+      }
 
-        .social-media li {
-            margin: 10px 0;
-            font-size: 18px;
-        }
+      .social-media li {
+          margin: 10px 0;
+          font-size: 18px;
+      }
 
-        .contact-details p {
-            margin: 10px 0;
-            font-size: 18px;
-        }
+      .contact-details p {
+          margin: 10px 0;
+          font-size: 18px;
+      }
 
-        .contact-details a {
-            text-decoration: none;
-            color: rgb(0, 16, 247);
-        }
+      .contact-info a {
+          text-decoration: none;
+          color: rgb(247, 0, 0);
+      }
 
-        .contact-details a:hover {
-            color: #0070c0; /* Change the color to match your design */
-        }
+      .contact-info a:hover {
+          color: #c41919; /* Change the color to match your design */
+      }
 
                 
         /* 
@@ -255,7 +287,12 @@
           padding-bottom: 20px;
         }
 
-       
+       /* Styling the about us descriptions of a company: values, mission and who we are*/
+       .description {
+        text-align: left;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+
+      }
 
 
     </style>
@@ -274,44 +311,45 @@ https://templatemo.com/tm-574-mexant
 <body>
 
 
-  <header class="header-area header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                        <img src="assets/images/logo.png" alt="">
-                    </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                        
-                      <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
-                      <li class="scroll-to-section"><a href="gallery.html">Gallery</a></li>
-                      <li class="scroll-to-section"><a href="about-us.html">About Us</a></li>
-                      <li class="scroll-to-section"><a href="program.html">Program</a></li>
-                      <li class="scroll-to-section"><a href="coaches.html"> Coaches</a></li>
-                      <li><a href="https://form.jotform.com/232326142612445?fbclid=PAAabEweTpxu2II_rep6kXBt681DCH68hN_6Xw15EoqSSKvRhl0suJm7S7Pfg">Book Now</a></li> 
-                    </ul>        
-                    <!-- <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a> -->
-                    <!-- ***** Menu End ***** -->
-                </nav>
-            </div>
-        </div>
-    </div>
-</header>
-<!-- ***** Header Area End ***** -->
+<!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <nav class="main-nav">
+                      <!-- ***** Logo Start ***** -->
+                      <a href="index.html" class="logo">
+                          <img src="assets/images/logo.png" alt="">
+                      </a>
+                      <!-- ***** Logo End ***** -->
+                      <!-- ***** Menu Start ***** -->
+                      <ul class="nav">
+                          
+                          <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
+                          <li class="scroll-to-section"><a href="gallery.html">Gallery</a></li>
+                          <li class="scroll-to-section"><a href="about-us.html">About Us</a></li>
+                          <li class="scroll-to-section"><a href="program.html">Program</a></li>
+                          <li class="scroll-to-section"><a href="ind.html"> Coaches</a></li>
+                          <li><a href="https://form.jotform.com/232326142612445?fbclid=PAAabEweTpxu2II_rep6kXBt681DCH68hN_6Xw15EoqSSKvRhl0suJm7S7Pfg">Book Now</a></li> 
+                      </ul>        
+                      <!-- <a class='menu-trigger'>
+                          <span>Menu</span>
+                      </a> -->
+                      <!-- ***** Menu End ***** -->
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
 
   <div class="page-heading">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <div class="brief-text-box">
-            <h2>About 7MANIA</h2>
-            <div class="div-dec"></div>
+             <h2 class = "page_title">About 7MANIA</h2>
+            <!-- <div class="div-dec"></div> -->
           </div>
         </div>
       </div>
@@ -400,7 +438,7 @@ https://templatemo.com/tm-574-mexant
               <article class="accordion">
                 <div class="accordion-head">
                   <div class="brief-text-box second-usage">
-                    <span>About 7mania</span>
+                    <span>WHO WE ARE</span>
                     <span class="icon">
                         <i class="icon fa fa-chevron-right"></i>
                     </span>
@@ -409,8 +447,13 @@ https://templatemo.com/tm-574-mexant
                 </div>
                 <div class="accordion-body">
                     <div class="content">
-                        <div>7Mania is a football training academy for children of ages 5-18. At 7mania, we equip your children with football skills and emotional support. 
-                          <br>We have currently a fully functioning training facility. We are located in Abu Dhabi. </div>
+                        <div class = "description">We are <b>7 M A N i A</b> Football Academy, established in 2020 with an unwavering
+                          passion for the captivating world of football. Our relentless pursuit of greatness fuels our ambition to reach new heights of success. 
+                          
+                          <br><br>
+                          To ensure the highest level of professionalism in every training session, we have handpicked a team of exceptional coaches who hold UEFA
+                          licenses, epitomizing our commitment to excellence. 
+                          
                         <!-- <br><br>We do not ask you anything in return. You are free to use our templates for any purpose.</p> -->
                     </div>
                 </div>
@@ -419,7 +462,7 @@ https://templatemo.com/tm-574-mexant
               <article class="accordion">
                 <div class="accordion-head">
                   <div class="brief-text-box second-usage">
-                    <span>Our Culture</span>
+                    <span>OUR MISSION</span>
                     <span class="icon">
                         <i class="icon fa fa-chevron-right"></i>
                     </span>
@@ -428,13 +471,63 @@ https://templatemo.com/tm-574-mexant
                 </div>
                 <div class="accordion-body">
                     <div class="content">
-                        <div>7Mania is a football training academy for children of ages 5-18. At 7mania, we equip your children with football skills and emotional support. 
-                          <br>We have currently a fully functioning training facility. We are located in Abu Dhabi. </div>
-                        <!-- <br><br>We do not ask you anything in return. You are free to use our templates for any purpose.</p> -->
+                        <div class = "description">At our football academy, our mission is to provide aspiring footballers 
+                          with the highest level of training and development opportunities. We 
+                          strive to nurture their passion for the game and help them reach their 
+                          full potential as skilled athletes. Through a combination of expert 
+                          coaching, state-of-the-art facilities, and competitive opportunities, we
+                          aim to create a supportive and challenging environment where 
+                          players can thrive and excel. <br>
+                    </div>
+                </div>
+              </article>
+
+              <!-- Third scrollable about us -->
+              <article class="accordion">
+                <div class="accordion-head">
+                  <div class="brief-text-box second-usage">
+                    <span>OUR VISION</span>
+                    <span class="icon">
+                        <i class="icon fa fa-chevron-right"></i>
+                    </span>
+                  </div>
+                    
+                </div>
+                <div class="accordion-body">
+                    <div class="content">
+                        <div class = "description">Our vision is to be recognized as a leading football academy, known 
+                          for producing talented and well-rounded players who go on to 
+                          achieve success at both the professional and national levels. We seek 
+                          to create a pathway for our players to pursue careers in football,
+                          while instilling in them valuable life skills such as discipline, 
+                          teamwork, and resilience. We aspire to be a center of excellence that 
+                          inspires young athletes and contributes to the growth and 
+                          development of the sport.
                     </div>
                 </div>
               </article>
               
+              <!-- Fourth scrollable about us -->
+              <article class="accordion">
+                <div class="accordion-head">
+                  <div class="brief-text-box second-usage">
+                    <span>OUR VALUES</span>
+                    <span class="icon">
+                        <i class="icon fa fa-chevron-right"></i>
+                    </span>
+                  </div>
+                    
+                </div>
+                <div class="accordion-body">
+                    <div class="content">
+                        <div class = "description">Founded on the principles of <b>Respect</b>, <b>Creativity</b> , 
+                          <b>Responsibility</b>, <b>Leadership</b>, <b>Passion</b>, and <b>Dedication</b>, the 
+                          <b>7 M A N i A</b> Football Academy is a force to be reckoned with. We are not just a team; we are a family, united by our unwavering 
+                          commitment to these seven foundations that shape our identity. 
+                          
+                    </div>
+                </div>
+              </article>
               <!-- Any feature that is required to be added as an expandable feature can  be added here by following the format copied from an article above-->
             
           </div>
@@ -554,10 +647,13 @@ https://templatemo.com/tm-574-mexant
       </div>
     </div>
   </section> -->
-  <div class = "quote">
+
+  <!-- <div class = "quote"> -->
     <!-- <p class = "quote">"Your stylish italic quote goes here."</p> -->
-  </div>
-  <section class="contact-section">
+  <!-- </div> -->
+
+
+  <section class="contact-section" id="ContactSection">
     <div class="contact-info">
         <div class="location">
             <h3>Location</h3>
@@ -576,18 +672,18 @@ https://templatemo.com/tm-574-mexant
         <div class="social-media">
             <h3>Social Media</h3>
             <ul>
-              <li>
-                <i class="fab fa-facebook"></i>
-                <a href="https://www.facebook.com/profile.php?id=100068141406634" target="_blank">Facebook</a>
-              </li>
-              <li>
-                  <i class="fab fa-twitter"></i>
-                  <a href="https://twitter.com/youracademy" target="_blank">Twitter</a>
-              </li>
-              <li>
-                  <i class="fab fa-instagram"></i>
-                  <a href="https://www.instagram.com/7mania.football/" target="_blank">Instagram</a>
-              </li>
+                <li>
+                    <i class="fab fa-facebook"></i>
+                    <a href="https://www.facebook.com/profile.php?id=100068141406634" target="_blank">Facebook</a>
+                </li>
+                <li>
+                    <i class="fab fa-twitter"></i>
+                    <a href="https://twitter.com/youracademy" target="_blank">Twitter</a>
+                </li>
+                <li>
+                    <i class="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com/7mania.football/" target="_blank">Instagram</a>
+                </li>
                 <!-- Add more social media links as needed -->
             </ul>
         </div>
@@ -599,17 +695,17 @@ https://templatemo.com/tm-574-mexant
     </div>
 </section>
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Copyright &copy <span id="displayYear"></span> 7 MANIA Football Academy. All Rights Reserved.
-          
-          <br>Designed by <a title="CSS Templates" rel="sponsored" href="https://templatemo.com" target="_blank">Henok, Noah & Abel</a></p>
-        </div>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <p>Copyright &copy <span id="displayYear"></span> 7 MANIA Football Academy. All Rights Reserved.
+        
+        <br>Designed by <a title="CSS Templates" rel="sponsored" href="https://templatemo.com" target="_blank">Henok, Noah & Abel</a></p>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
