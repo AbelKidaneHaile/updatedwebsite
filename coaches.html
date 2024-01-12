@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Troweld</title>
+  <title>Coaches</title>
 
   <!-- including the css styling link of the main page so that this page has a consistent style as the rest pages -->
   <link rel="stylesheet" href="assets/css/templatemo-574-mexant.css">
@@ -42,10 +42,46 @@
 
   <!-- Style of the info section has been added here -->
   <style>
+
+    /*Styling added on 12/01/2024*/
+
+   /*.header-area { */
+    /*  background-color: rgba(0, 0, 0, 0.5); /* Set the background color to black */
+      /*color: rgb(10, 10, 10); /* You may want to adjust text color to make it readable */
+ /* }*/
+
+
+  /* Styling the header-section */
+   /*.main-nav{
+     margin-left: 15%;
+   }*/
+
+   /*.logo{
+    margin-left: 8.5%;
+   }
+
+  .page_title{
+    font-family: "Arial", sans-serif;   
+  }
+    /*Changing the font of the page title */
+  
+
+
+   /*Styling added on 12/01/2024*/
+
+    /* Header section styling */
+    .header-area {
+      background-color: rgba(0, 0, 0, 0.5); /* Set the background color to black */
+      color: rgb(10, 10, 10); /* You may want to adjust text color to make it readable */
+     }
+    /*end of header section styling*/
       
     .section-header h2, h3, p {
           color: aliceblue;
       }
+
+
+/* Contact section styling*/
 
     .su_contact-section {
       background-color: #020202;
@@ -102,7 +138,53 @@
         width: 90%;
         height: 20%;
     }
-  
+
+     /* Beginning of the footer section and contact details footer*/
+
+     .contact-section {
+      background-color: #000000;
+      padding: 40px;
+      text-align: center;
+     }
+
+      .contact-info {
+          display: flex;
+          justify-content: space-around;
+      }
+
+      .location, .social-media, .contact-details {
+          flex: 1;
+          padding: 20px;
+      }
+
+      .map-container {
+          margin-top: 20px;
+      }
+
+      .social-media ul {
+          list-style: none;
+          padding: 0;
+      }
+
+      .social-media li {
+          margin: 10px 0;
+          font-size: 18px;
+      }
+
+      .contact-details p {
+          margin: 10px 0;
+          font-size: 18px;
+      }
+
+      .contact-info a {
+          text-decoration: none;
+          color: rgb(247, 0, 0);
+      }
+
+      .contact-info a:hover {
+          color: #c41919; /* Change the color to match your design */
+      }
+
 
 
 
@@ -110,131 +192,41 @@
   <!-- style of the info section ends here -->
 </head>
 
-<body class="sub_page">
-  <div class="hero_area">
-
-    <!-- Former header section strats -->
-    <!-- <header class="header_section">
-      <div class="header_top">
-        <div class="container-fluid header_top_container">
-          <a class="navbar-brand " href="index.html"> Tro<span>Weld</span> </a>
-          <div class="contact_nav">
-            <a href="">
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
-              <span>
-                Location
-              </span>
-            </a>
-            <a href="">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-                Call : +01 123455678990
-              </span>
-            </a>
-            <a href="">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              <span>
-                demo@gmail.com
-              </span>
-            </a>
-          </div>
-          <div class="social_box">
-            <a href="">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="header_bottom">
-        <div class="container-fluid">
-          <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand navbar_brand_mobile" href="index.html"> Tro<span>Weld</span> </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class=""> </span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav  ">
-                <li class="nav-item ">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="service.html">Services</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                    <span>
-                      Login
-                    </span>
-                  </a>
-                </li>
-                <form class="form-inline">
-                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                  </button>
-                </form>
-              </ul>
+<!-- <body class="sub_page"> -->
+  <body>
+      <!-- ***** Header Area Start ***** -->
+      <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/logo.png" alt="">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            
+                            <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="gallery.html">Gallery</a></li>
+                            <li class="scroll-to-section"><a href="about-us.html">About Us</a></li>
+                            <li class="scroll-to-section"><a href="program.html">Program</a></li>
+                            <li class="scroll-to-section"><a href="ind.html"> Coaches</a></li>
+                            <li><a href="https://form.jotform.com/232326142612445?fbclid=PAAabEweTpxu2II_rep6kXBt681DCH68hN_6Xw15EoqSSKvRhl0suJm7S7Pfg">Book Now</a></li> 
+                        </ul>        
+                        <!-- <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a> -->
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
             </div>
-          </nav>
         </div>
-      </div>
-    </header> -->
-    <!--  Former end header section -->
+    </header>
+    <!-- ***** Header Area End ***** -->
 
-
-    <!-- New header section 24/11/2023 -->
-    <header class="header-area header-sticky">
-      <div class="container">
-          <div class="row">
-              <div class="col-12">
-                  <nav class="main-nav">
-                      <!-- ***** Logo Start ***** -->
-                      <a href="index.html" class="logo">
-                          <img src="assets/images/logo.png" alt="">
-                      </a>
-                      <!-- ***** Logo End ***** -->
-                      <!-- ***** Menu Start ***** -->
-                      <ul class="nav">
-                          
-                        <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
-                        <li class="scroll-to-section"><a href="gallery.html">Gallery</a></li>
-                        <li class="scroll-to-section"><a href="about-us.html">About Us</a></li>
-                        <li class="scroll-to-section"><a href="program.html">Program</a></li>
-                        <li class="scroll-to-section"><a href="coaches.html"> Coaches</a></li>
-                        <li><a href="https://form.jotform.com/232326142612445?fbclid=PAAabEweTpxu2II_rep6kXBt681DCH68hN_6Xw15EoqSSKvRhl0suJm7S7Pfg">Book Now</a></li>
-                      </ul>        
-                      <!-- <a class='menu-trigger'>
-                          <span>Menu</span>
-                      </a> -->
-                      <!-- ***** Menu End ***** -->
-                  </nav>
-              </div>
-          </div>
-      </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
     <!-- end of new header section -->
-  </div>
 
   <!-- portfolio section -->
 
@@ -347,7 +339,7 @@
 
 
   <!-- new info section -->
-  <section class="su_contact-section">
+  <section class="contact-section" id="ContactSection">
     <div class="contact-info">
         <div class="location">
             <h3>Location</h3>
@@ -366,28 +358,29 @@
         <div class="social-media">
             <h3>Social Media</h3>
             <ul>
-              <li>
-                <i class="fab fa-facebook"></i>
-                <a href="https://www.facebook.com/profile.php?id=100068141406634" target="_blank">Facebook</a>
-              </li>
-              <li>
-                  <i class="fab fa-twitter"></i>
-                  <a href="https://twitter.com/youracademy" target="_blank">Twitter</a>
-              </li>
-              <li>
-                  <i class="fab fa-instagram"></i>
-                  <a href="https://www.instagram.com/7mania.football/" target="_blank">Instagram</a>
-              </li>
+                <li>
+                    <i class="fab fa-facebook"></i>
+                    <a href="https://www.facebook.com/profile.php?id=100068141406634" target="_blank">Facebook</a>
+                </li>
+                <li>
+                    <i class="fab fa-twitter"></i>
+                    <a href="https://twitter.com/youracademy" target="_blank">Twitter</a>
+                </li>
+                <li>
+                    <i class="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com/7mania.football/" target="_blank">Instagram</a>
+                </li>
                 <!-- Add more social media links as needed -->
             </ul>
         </div>
         <div class="contact-details">
             <h3>Contact Details</h3>
-            <p><a href="mailto:info@youracademy.com">Email: info@7mania.com</a></p>
-            <p><a href="tel:+971502839087">Phone: +971 50 283 9087</a></p>
+            <p>Email: <a href="mailto:info@youracademy.com">Email: info@7mania.com</a></p>
+            <p>Phone: <a href="tel:+971502839087">Phone: +971 50 283 9087</a></p>
         </div>
     </div>
 </section>
+
   <!-- end of new info section -->
 
 
