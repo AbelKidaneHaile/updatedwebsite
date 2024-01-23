@@ -977,7 +977,8 @@ section.about-us ul.nacc li span.title {
 }
 
 section.about-us ul.nacc li span.item-title {
-  color: #ce2424 !important;
+  /* color: #ce2424 !important; */
+  color: #c41919 !important;
   font-weight: 600 !important;
 }
 
